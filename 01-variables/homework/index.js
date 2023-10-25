@@ -9,6 +9,7 @@ const hundred = 100;
 const thousand = 1000;
 
 console.log((ten * ten + hundred) * hundred >= thousand * ten )
+
 /* 
     ten*ten=100
     100 + hunred=200
@@ -16,13 +17,12 @@ console.log((ten * ten + hundred) * hundred >= thousand * ten )
     
     thousand * ten= 10 000
     
-    20 000 >= 10 000 = true                     */
+    20 000 >= 10 000 = true      */
 
 //3 задание
 
 console.log(6 > 4 && 10 < 5) // false // true && false = false
 console.log((30 + 4) > (7 ** 2)) // false // 34>49=false
-
-console.log(null && true)//null
-console.log(!('hi' + 'hi') && true)//false 
-console.log(!('hi' + 'hi') && false)//false
+console.log(null && true) //null
+console.log(!('hi' + 'hi') && true) //false 
+console.log(!('hi' + 'hi') && false) //false
