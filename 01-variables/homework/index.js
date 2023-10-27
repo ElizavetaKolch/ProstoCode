@@ -23,6 +23,6 @@ console.log((ten * ten + hundred) * hundred >= thousand * ten )
 
 console.log(6 > 4 && 10 < 5) // false // true && false = false
 console.log((30 + 4) > (7 ** 2)) // false // 34>49=false
-console.log(null && true) //null
+console.log(true && null) //null
 console.log(!('hi' + 'hi') && true) //false 
 console.log(!('hi' + 'hi') && false) //false
