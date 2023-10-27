@@ -6,8 +6,9 @@ let str = "Hi!"
 let cup = null
 let hat = undefined
 var dog ={}
-const str2= "Hello world!"
-console.log(name,myAge,isOpen,num,str,cup,hat,dog,str2) //Elizaveta 20 true 12 Hi! null undefined {} Hello world!
+function hi(){console.log("Hello World!")} 
+hi()
+console.log(name,myAge,isOpen,num,str,cup,hat,dog,) //Elizaveta 20 true 12 Hi! null undefined {} Hello world!
 console.log(7>5)//true
 console.log("Hello"=="World")//false
 console.log(7=="World")//false
