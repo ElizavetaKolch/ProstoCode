@@ -6,7 +6,7 @@ let str = "Hi!"
 let cup = null
 let hat = undefined
 var dog ={}
-let func=function hi(){console.log("Hello World!")} 
+let func=function(){console.log("Hello World!")} 
 func()
 console.log(name,myAge,isOpen,num,str,cup,hat,dog,) //Elizaveta 20 true 12 Hi! null undefined {} Hello world!
 console.log(7>5)//true
