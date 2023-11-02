@@ -6,13 +6,12 @@
 если дверь открыта, то необходимо вывести в консоль сообщение Дверь открыта , 
 в противном случае вывести в консоль сообщение Дверь закрыта */
 
+const isOpen = false;
 
-const isOpen = true
-
-if (isOpen === true ){
-    console.log('Дверь открыта ')
-    } else {
-    console.log( 'Дверь закрыта')
+if (isOpen === true) {
+  console.log("Дверь открыта ");
+} else {
+  console.log("Дверь закрыта");
 }
 
 /*
@@ -28,22 +27,23 @@ if (isOpen === true ){
     | серебро | 15% |
     | золото  | 20% |
     
-После выполнения кода необходимо вывести сообщение `Приветствуем вас! Ваш статус: {статус} и ваша скидка составляет: {размер скидки}` */
+После выполнения кода необходимо вывести сообщение `Приветствуем вас! Ваш статус: {статус} и ваша скидка составляет: &{размер скидки}` */
 
+const discount = 20;
 
-
-const status='BRONZE'
-const discount=10
-
-
-if ( discount === 10 ){
-    console.log(`Приветствуем вас! Ваш статус: ${status} и ваша скидка составляет: ${discount}%`)
-    } else if  ( discount === 15 ){
-    console.log( `Приветствуем вас! Ваш статус: ${status} и ваша скидка составляет: ${discount}%`)
-    } else if  ( discount === 20 ){
-    console.log( `Приветствуем вас! Ваш статус: ${status} и ваша скидка составляет: ${discount}%`)
+if (discount === 10) {
+  console.log(
+    `Приветствуем вас! Ваш статус: BRONZE и ваша скидка составляет: ${discount}%`
+  );
+} else if (discount === 15) {
+  console.log(
+    `Приветствуем вас! Ваш статус: SILVER и ваша скидка составляет: ${discount}%`
+  );
+} else if (discount === 20) {
+  console.log(
+    `Приветствуем вас! Ваш статус: GOLD и ваша скидка составляет: ${discount}%`
+  );
 }
-
 
 /* 
     3 ЗАДАНИЕ
@@ -58,31 +58,41 @@ if ( discount === 10 ){
 В случае, если статус пользователя не подходит не под одно условие, 
 то его скидка составляет `5%` и его статус становится `железо`*/
 
-
 const anotherDiscount = 40;
-//const anotherStatus = 'PALLADIUM';
+//const anotherclientStatus = 'PALLADIUM';
 
 switch (anotherDiscount) {
   case 40:
-   console.log(`Приветствуем вас! Ваш статус: PALLADIUM и ваша скидка составляет: ${anotherDiscount}%`)
+    console.log(
+      `Приветствуем вас! Ваш статус: PALLADIUM и ваша скидка составляет: ${anotherDiscount}%`
+    );
     break;
   case 25:
-    console.log(`Приветствуем вас! Ваш статус: PLATINUM и ваша скидка составляет: ${anotherDiscount}%`)
+    console.log(
+      `Приветствуем вас! Ваш статус: PLATINUM и ваша скидка составляет: ${anotherDiscount}%`
+    );
     break;
   case 20:
-    console.log(`Приветствуем вас! Ваш статус: GOLD и ваша скидка составляет: ${anotherDiscount}%`)   
+    console.log(
+      `Приветствуем вас! Ваш статус: GOLD и ваша скидка составляет: ${anotherDiscount}%`
+    );
     break;
   case 15:
-    console.log(`Приветствуем вас! Ваш статус: SILVER и ваша скидка составляет: ${anotherDiscount}%`)   
+    console.log(
+      `Приветствуем вас! Ваш статус: SILVER и ваша скидка составляет: ${anotherDiscount}%`
+    );
     break;
   case 10:
-    console.log(`Приветствуем вас! Ваш статус: BRONZE и ваша скидка составляет: ${anotherDiscount}%`)   
+    console.log(
+      `Приветствуем вас! Ваш статус: BRONZE и ваша скидка составляет: ${anotherDiscount}%`
+    );
     break;
-	default: 
-    console.log(`Приветствуем вас! Ваш статус: IRON и ваша скидка составляет: 5%`) 
-	break;
+  default:
+    console.log(
+      `Приветствуем вас! Ваш статус: IRON и ваша скидка составляет: 5%`
+    );
+    break;
 }
-
 
 /*
       ФУНКЦИИ
@@ -91,13 +101,12 @@ switch (anotherDiscount) {
 Напишите функцию, которая выводит в консоль имя пользователя 
 (имя пользователя можно передавать через переменную, можно обращаться к глобальной переменной)*/
 
-const userName='Elizaveta'
-function getName (){
-    const user = `Имя пользователя: ${userName} `
-    console.log(user)
+const userName = "Elizaveta";
+function getName() {
+  const user = `Имя пользователя: ${userName} `;
+  console.log(user);
 }
-getName()
-
+getName();
 
 /*
     2 ЗАДАНИЕ
@@ -108,16 +117,15 @@ getName()
 После необходимо создать условную конструкцию и в качестве условия вызвать функцию с возрастом пользователя,
 если условие выполняется, то выводим в консоль “Ура, вы совершеннолетний” , в противном случае  “Тебе бы подрости, дружок”*/
 
-
-function checkAge(age){
-    if (age===18){
-        console.log('Ура, вы совершеннолетний')
-    }else {
-        console.log('Тебе бы подрости, дружок')
-    }
+function checkAge(age) {
+  if (age >= 18) {
+    console.log("Ура, вы совершеннолетний");
+  } else {
+    console.log("Тебе бы подрости, дружок");
+  }
 }
 
-checkAge(17)
+checkAge(17);
 
 /* 
       3 ЗАДАНИЕ 
@@ -126,43 +134,56 @@ checkAge(17)
 функция принимает на вход статус клиента, а на выходе выводит сообщение в консоль
 - Приветствуем вас! Ваш статус: {статус} и ваша скидка составляет: {размер скидки} и возвращает названеие статуса */
 
-
-
-function checkStatus (status, discount) {
- if ( status === 'BRONZE'){
-    console.log(`Приветствуем вас! Ваш статус: ${status} и ваша скидка составляет: ${discount}%`)
-    } else if  ( status === 'SILVER' ){
-    console.log( `Приветствуем вас! Ваш статус: ${status} и ваша скидка составляет: ${discount}%`)
-    } else if  ( status === 'GOLD'){
-    console.log( `Приветствуем вас! Ваш статус: ${status} и ваша скидка составляет: ${discount}%`)
-    }
+function checkclientStatus(clientStatus) {
+  if (clientStatus === "BRONZE") {
+    console.log(
+      `Приветствуем вас! Ваш статус: ${clientStatus} и ваша скидка составляет: 10%`
+    );
+  } else if (clientStatus === "SILVER") {
+    console.log(
+      `Приветствуем вас! Ваш статус: ${clientStatus} и ваша скидка составляет: 15%`
+    );
+  } else if (clientStatus === "GOLD") {
+    console.log(
+      `Приветствуем вас! Ваш статус: ${clientStatus} и ваша скидка составляет: 20%`
+    );
+  }
 }
 
-checkStatus('GOLD', 20)
+checkclientStatus("GOLD");
 
-
-
-
-
-const anotherStatus = 'PALLADIUM';
-
-switch (anotherStatus) {
-  case 'PALLADIUM':
-   console.log(`Приветствуем вас! Ваш статус: ${anotherStatus} и ваша скидка составляет: 40%`)
-    break;
-  case 'PLATINUM':
-    console.log(`Приветствуем вас! Ваш статус:  ${anotherStatus}и ваша скидка составляет: 25%`)
-    break;
-  case 'GOLD':
-    console.log(`Приветствуем вас! Ваш статус:  ${anotherStatus} и ваша скидка составляет: 20%`)   
-    break;
-  case 'SILVER':
-    console.log(`Приветствуем вас! Ваш статус:  ${anotherStatus} и ваша скидка составляет: 15%`)   
-    break;
-  case 'BRONZE':
-    console.log(`Приветствуем вас! Ваш статус:  ${anotherStatus} и ваша скидка составляет: 10%`)   
-    break;
-	default: 
-    console.log(`Приветствуем вас! Ваш статус: IRON и ваша скидка составляет: 5%`) 
-	break;
-}
+const client_Status = (anotherclientStatus) => {
+  switch (anotherclientStatus) {
+    case "PALLADIUM":
+      console.log(
+        `Приветствуем вас! Ваш статус: ${anotherclientStatus} и ваша скидка составляет: 40%`
+      );
+      break;
+    case "PLATINUM":
+      console.log(
+        `Приветствуем вас! Ваш статус:  ${anotherclientStatus}и ваша скидка составляет: 25%`
+      );
+      break;
+    case "GOLD":
+      console.log(
+        `Приветствуем вас! Ваш статус:  ${anotherclientStatus} и ваша скидка составляет: 20%`
+      );
+      break;
+    case "SILVER":
+      console.log(
+        `Приветствуем вас! Ваш статус:  ${anotherclientStatus} и ваша скидка составляет: 15%`
+      );
+      break;
+    case "BRONZE":
+      console.log(
+        `Приветствуем вас! Ваш статус:  ${anotherclientStatus} и ваша скидка составляет: 10%`
+      );
+      break;
+    default:
+      console.log(
+        `Приветствуем вас! Ваш статус: IRON и ваша скидка составляет: 5%`
+      );
+      break;
+  }
+};
+client_Status("PALLADIUM");
