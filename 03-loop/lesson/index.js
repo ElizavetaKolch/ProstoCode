@@ -138,4 +138,4 @@ function setka(numberColumns, numberLine) {
   }
 }
 
-setka(20, 20);
+setka(20, 10);
