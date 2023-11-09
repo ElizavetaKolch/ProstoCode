@@ -92,3 +92,4 @@ const checkHealth = (health1) => {
 }
 
 checkHealth(100)
+
