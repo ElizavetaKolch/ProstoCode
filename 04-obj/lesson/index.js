@@ -39,22 +39,22 @@ user.greet();
  */
 const calculator = {
   result: 0,
-  sum: (numb1, numb2) => {
+  sum (numb1, numb2)  {
     result = numb1 + numb2;
     console.log(`${numb1} + ${numb2} = ${result}`);
     this.result = result;
   },
-  minus: (numb1, numb2) => {
+  minus (numb1, numb2)  {
     result = numb1 - numb2;
     console.log(`${numb1} - ${numb2} = ${result}`);
     this.result = result;
   },
-  divide: (numb1, numb2) => {
+  divide (numb1, numb2)  {
     result = numb1 / numb2;
     console.log(`${numb1} / ${numb2} = ${result}`);
     this.result = result;
   },
-  multiply: (numb1, numb2) => {
+  multiply (numb1, numb2) {
     result = numb1 * numb2;
     console.log(`${numb1} * ${numb2} = ${result}`);
     this.result = result;
